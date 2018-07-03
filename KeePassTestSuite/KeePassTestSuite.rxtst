@@ -160,7 +160,7 @@ delete it.]]>
 			<testcase
 			datasource="CsvConnector_Credentials"
 			id="5c7e2c5b-46df-4c65-b66b-b3f69b489a23"
-			name="AddEntryByRecording">
+			name="AddEntriesByRecording">
 				<description>
 					<![CDATA[... using the recording module "AddEntry"]]>
 				</description>
@@ -435,8 +435,24 @@ connector in three different ways:]]>
 							</modulegroup>
 						</setup>
 						<testcase
+						id="32e63182-c4d3-4974-9bf8-d8b04f54c8d3"
+						name="AddEntryWithArguments">
+							<testmodule
+							id="6794cc06-3296-4e21-b11d-9ff2b1fd1245"
+							name="AddEntryByUserCodeAction">
+							</testmodule>
+							<testmodule
+							id="13a773fb-f5e6-41ad-b147-382f11625bf2"
+							name="ValidateEntry">
+							</testmodule>
+							<testmodule
+							id="36dbe530-c4bf-4534-93e9-9f2fa56d740f"
+							name="DeleteEntry">
+							</testmodule>
+						</testcase>
+						<testcase
 						id="5c7e2c5b-46df-4c65-b66b-b3f69b489a23"
-						name="AddEntryByRecording">
+						name="AddEntriesByRecording">
 							<testmodule
 							id="3885670f-b123-440f-9f44-16a0e48f48df"
 							name="AddEntry">
@@ -463,22 +479,6 @@ connector in three different ways:]]>
 							</testmodule>
 							<testmodule
 							id="f917d91a-6739-47ba-9909-d50dc1fff178"
-							name="DeleteEntry">
-							</testmodule>
-						</testcase>
-						<testcase
-						id="32e63182-c4d3-4974-9bf8-d8b04f54c8d3"
-						name="AddEntryWithArguments">
-							<testmodule
-							id="6794cc06-3296-4e21-b11d-9ff2b1fd1245"
-							name="AddEntryByUserCodeAction">
-							</testmodule>
-							<testmodule
-							id="13a773fb-f5e6-41ad-b147-382f11625bf2"
-							name="ValidateEntry">
-							</testmodule>
-							<testmodule
-							id="36dbe530-c4bf-4534-93e9-9f2fa56d740f"
 							name="DeleteEntry">
 							</testmodule>
 						</testcase>
@@ -611,6 +611,9 @@ connector in three different ways:]]>
 	default="MyFirstRunConfig">
 		<testconfiguration
 		name="MyFirstRunConfig">
+			<testcontainer
+			id="32e63182-c4d3-4974-9bf8-d8b04f54c8d3">
+			</testcontainer>
 			<testcontainer
 			id="35919cb4-ff0a-47d5-8755-346f31078869">
 			</testcontainer>
