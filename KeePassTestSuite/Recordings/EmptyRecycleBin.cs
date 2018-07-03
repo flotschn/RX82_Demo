@@ -88,8 +88,8 @@ namespace KeePassTestSuite.Recordings
             Delay.Milliseconds(200);
             
             try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'KeePass2.ButtonDelete' at Center.", repo.KeePass2.ButtonDeleteInfo, new RecordItemIndex(2));
-                repo.KeePass2.ButtonDelete.Click();
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'KeePassApplication.ButtonDelete' at Center.", repo.KeePassApplication.ButtonDeleteInfo, new RecordItemIndex(2));
+                repo.KeePassApplication.ButtonDelete.Click();
                 Delay.Milliseconds(200);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             

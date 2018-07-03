@@ -27,12 +27,12 @@ namespace KeePassTestSuite
     public partial class KeePassTestSuiteRepository : RepoGenBaseFolder
     {
         static KeePassTestSuiteRepository instance = new KeePassTestSuiteRepository();
-        KeePassTestSuiteRepositoryFolders.LogInAppFolder _login;
+        KeePassTestSuiteRepositoryFolders.LogInWindowAppFolder _loginwindow;
         KeePassTestSuiteRepositoryFolders.MainFormAppFolder _mainform;
         KeePassTestSuiteRepositoryFolders.KeePassAppFolder _keepass;
         KeePassTestSuiteRepositoryFolders.AddEntryAppFolder _addentry;
         KeePassTestSuiteRepositoryFolders.IconPickerAppFolder _iconpicker;
-        KeePassTestSuiteRepositoryFolders.KeePass2AppFolder _keepass2;
+        KeePassTestSuiteRepositoryFolders.KeePassApplicationAppFolder _keepassapplication;
 
         /// <summary>
         /// Gets the singleton class instance representing the KeePassTestSuiteRepository element repository.
@@ -49,12 +49,12 @@ namespace KeePassTestSuite
         public KeePassTestSuiteRepository() 
             : base("KeePassTestSuiteRepository", "/", null, 0, false, "0e2cdd23-dd72-4d10-b662-4933e627b6fb", ".\\RepositoryImages\\KeePassTestSuiteRepository0e2cdd23.rximgres")
         {
-            _login = new KeePassTestSuiteRepositoryFolders.LogInAppFolder(this);
+            _loginwindow = new KeePassTestSuiteRepositoryFolders.LogInWindowAppFolder(this);
             _mainform = new KeePassTestSuiteRepositoryFolders.MainFormAppFolder(this);
             _keepass = new KeePassTestSuiteRepositoryFolders.KeePassAppFolder(this);
             _addentry = new KeePassTestSuiteRepositoryFolders.AddEntryAppFolder(this);
             _iconpicker = new KeePassTestSuiteRepositoryFolders.IconPickerAppFolder(this);
-            _keepass2 = new KeePassTestSuiteRepositoryFolders.KeePass2AppFolder(this);
+            _keepassapplication = new KeePassTestSuiteRepositoryFolders.KeePassApplicationAppFolder(this);
         }
 
 #region Variables
@@ -122,12 +122,12 @@ namespace KeePassTestSuite
         }
 
         /// <summary>
-        /// The LogIn folder.
+        /// The LogInWindow folder.
         /// </summary>
         [RepositoryFolder("93269426-4e2d-4251-b500-04dc1535117a")]
-        public virtual KeePassTestSuiteRepositoryFolders.LogInAppFolder LogIn
+        public virtual KeePassTestSuiteRepositoryFolders.LogInWindowAppFolder LogInWindow
         {
-            get { return _login; }
+            get { return _loginwindow; }
         }
 
         /// <summary>
@@ -167,12 +167,12 @@ namespace KeePassTestSuite
         }
 
         /// <summary>
-        /// The KeePass2 folder.
+        /// The KeePassApplication folder.
         /// </summary>
         [RepositoryFolder("eba40eb0-9836-4cdd-950b-f45c7746145d")]
-        public virtual KeePassTestSuiteRepositoryFolders.KeePass2AppFolder KeePass2
+        public virtual KeePassTestSuiteRepositoryFolders.KeePassApplicationAppFolder KeePassApplication
         {
-            get { return _keepass2; }
+            get { return _keepassapplication; }
         }
     }
 
@@ -183,19 +183,19 @@ namespace KeePassTestSuite
     public partial class KeePassTestSuiteRepositoryFolders
     {
         /// <summary>
-        /// The LogInAppFolder folder.
+        /// The LogInWindowAppFolder folder.
         /// </summary>
         [RepositoryFolder("93269426-4e2d-4251-b500-04dc1535117a")]
-        public partial class LogInAppFolder : RepoGenBaseFolder
+        public partial class LogInWindowAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _masterpasswordInfo;
             RepoItemInfo _btokInfo;
 
             /// <summary>
-            /// Creates a new LogIn  folder.
+            /// Creates a new LogInWindow  folder.
             /// </summary>
-            public LogInAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("LogIn", "/form[@controlname='KeyPromptForm']", parentFolder, 30000, null, false, "93269426-4e2d-4251-b500-04dc1535117a", "")
+            public LogInWindowAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("LogInWindow", "/form[@controlname='KeyPromptForm']", parentFolder, 30000, null, false, "93269426-4e2d-4251-b500-04dc1535117a", "")
             {
                 _masterpasswordInfo = new RepoItemInfo(this, "MasterPassword", "text[@controlname='m_tbPassword']/text[@accessiblerole='Text']", 10000, null, "982d26ce-9282-492b-9795-a6ecf745d931");
                 _btokInfo = new RepoItemInfo(this, "BtOK", "button[@controlname='m_btnOK']", 10000, null, "1c9d14c1-7d13-4526-9e9b-f5627600e539");
@@ -1123,20 +1123,20 @@ namespace KeePassTestSuite
         }
 
         /// <summary>
-        /// The KeePass2AppFolder folder.
+        /// The KeePassApplicationAppFolder folder.
         /// </summary>
         [RepositoryFolder("eba40eb0-9836-4cdd-950b-f45c7746145d")]
-        public partial class KeePass2AppFolder : RepoGenBaseFolder
+        public partial class KeePassApplicationAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _buttondeleteInfo;
 
             /// <summary>
-            /// Creates a new KeePass2  folder.
+            /// Creates a new KeePassApplication  folder.
             /// </summary>
-            public KeePass2AppFolder(RepoGenBaseFolder parentFolder) :
-                    base("KeePass2", "/form[@title='KeePass' and @processname='KeePass']", parentFolder, 10000, null, true, "eba40eb0-9836-4cdd-950b-f45c7746145d", "")
+            public KeePassApplicationAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("KeePassApplication", "/form[@title='KeePass' and @processname='KeePass']", parentFolder, 10000, null, true, "eba40eb0-9836-4cdd-950b-f45c7746145d", "")
             {
-                _buttondeleteInfo = new RepoItemInfo(this, "ButtonDelete", ".//button[1]", 5000, null, "ea5323c6-eee8-471e-bdfd-3793afe556ed");
+                _buttondeleteInfo = new RepoItemInfo(this, "ButtonDelete", ".//button[4]", 5000, null, "ea5323c6-eee8-471e-bdfd-3793afe556ed");
             }
 
             /// <summary>
