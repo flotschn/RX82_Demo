@@ -89,12 +89,12 @@ namespace KeePassTestSuite.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.Entry' at Center.", repo.MainForm.EntryInfo, new RecordItemIndex(0));
-            repo.MainForm.Entry.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.Entry_2' at Center.", repo.MainForm.Entry_2Info, new RecordItemIndex(0));
+            repo.MainForm.Entry_2.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'MainForm.Entry' at Center.", repo.MainForm.EntryInfo, new RecordItemIndex(1));
-            repo.MainForm.Entry.Click(System.Windows.Forms.MouseButtons.Right, 100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'MainForm.Entry_2' at Center.", repo.MainForm.Entry_2Info, new RecordItemIndex(1));
+            repo.MainForm.Entry_2.Click(System.Windows.Forms.MouseButtons.Right, 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KeePass.DeleteEntry' at Center.", repo.KeePass.DeleteEntryInfo, new RecordItemIndex(2));
