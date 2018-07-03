@@ -283,7 +283,7 @@ namespace KeePassTestSuite
             KeePassTestSuiteRepositoryFolders.ButtonsFolder _buttons;
             KeePassTestSuiteRepositoryFolders.CategoriesFolder _categories;
             RepoItemInfo _editInfo;
-            RepoItemInfo _entry_3Info;
+            RepoItemInfo _entry_2Info;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -294,7 +294,7 @@ namespace KeePassTestSuite
                 _buttons = new KeePassTestSuiteRepositoryFolders.ButtonsFolder(this);
                 _categories = new KeePassTestSuiteRepositoryFolders.CategoriesFolder(this);
                 _editInfo = new RepoItemInfo(this, "Edit", "menubar[@controlname='m_menuMain']/menuitem[@accessiblename='Edit']", 10000, null, "0467e35e-9459-4015-89a9-cd4a06cb57c7");
-                _entry_3Info = new RepoItemInfo(this, "Entry_3", "container[@controlname='m_splitHorizontal']/?/?/container[@controlname='m_splitVertical']/?/?/table[@controlname='m_lvEntries']/?/?/cell[@text=$vartitle]", 10000, null, "2c816f84-4f8b-4db1-ac5c-60ac4e2a16a1");
+                _entry_2Info = new RepoItemInfo(this, "Entry_2", "container[@controlname='m_splitHorizontal']/?/?/container[@controlname='m_splitVertical']/?/?/table[@controlname='m_lvEntries']/?/?/cell[@text=$vartitle]", 10000, null, "2c816f84-4f8b-4db1-ac5c-60ac4e2a16a1");
             }
 
             /// <summary>
@@ -346,26 +346,26 @@ namespace KeePassTestSuite
             }
 
             /// <summary>
-            /// The Entry_3 item.
+            /// The Entry_2 item.
             /// </summary>
             [RepositoryItem("2c816f84-4f8b-4db1-ac5c-60ac4e2a16a1")]
-            public virtual Ranorex.Cell Entry_3
+            public virtual Ranorex.Cell Entry_2
             {
                 get
                 {
-                    return _entry_3Info.CreateAdapter<Ranorex.Cell>(true);
+                    return _entry_2Info.CreateAdapter<Ranorex.Cell>(true);
                 }
             }
 
             /// <summary>
-            /// The Entry_3 item info.
+            /// The Entry_2 item info.
             /// </summary>
             [RepositoryItemInfo("2c816f84-4f8b-4db1-ac5c-60ac4e2a16a1")]
-            public virtual RepoItemInfo Entry_3Info
+            public virtual RepoItemInfo Entry_2Info
             {
                 get
                 {
-                    return _entry_3Info;
+                    return _entry_2Info;
                 }
             }
 

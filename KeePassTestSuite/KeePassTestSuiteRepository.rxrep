@@ -1,4 +1,5 @@
-﻿<repository
+<?xml version="1.0" encoding="utf-8"?>
+<repository
 id="550de26a-9cec-4a8c-862c-5b3a773f0132"
 name="KeePassTestSuiteRepository"
 rxversion="8.2">
@@ -101,7 +102,7 @@ kWadAAAAAElFTkSuQmCC
 			addcaps="cell"
 			capname="cell"
 			id="2c816f84-4f8b-4db1-ac5c-60ac4e2a16a1"
-			name="Entry_3"
+			name="Entry_2"
 			refimgid="100e1eca-c6ac-4bdc-b1ae-7072c62b58bc"
 			searchtimeout="10000ms">
 				/form[@controlname='MainForm']/container[@controlname='m_splitHorizontal']/?/?/container[@controlname='m_splitVertical']/?/?/table[@controlname='m_lvEntries']/?/?/cell[@text=$vartitle]
