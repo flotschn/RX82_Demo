@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.2">
 	<testsuiteentryhierarchy>
@@ -327,7 +327,7 @@ connector in three different ways:]]>
 			<testcase
 			datasource="CsvConnector_Credentials"
 			id="bda41cf2-9036-45da-8f32-a82d2116f53a"
-			name="AddEntryByCodeModule">
+			name="AddEntriesByCodeModule_03">
 				<description>
 					<![CDATA[... using the&nbsp;code module "AddCredentialEntry"]]>
 				</description>
@@ -468,7 +468,7 @@ connector in three different ways:]]>
 						</testcase>
 						<testcase
 						id="bda41cf2-9036-45da-8f32-a82d2116f53a"
-						name="AddEntryByCodeModule">
+						name="AddEntriesByCodeModule_03">
 							<testmodule
 							id="fd1de731-18ce-4ff4-a624-accd706fade6"
 							name="AddCredentialEntry">
