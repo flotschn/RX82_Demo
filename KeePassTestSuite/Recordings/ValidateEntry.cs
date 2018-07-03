@@ -90,8 +90,8 @@ namespace KeePassTestSuite.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$varTitle) on item 'MainForm.Entry'.", repo.MainForm.EntryInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.MainForm.EntryInfo, "Text", varTitle);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$varTitle) on item 'MainForm.Entry_3'.", repo.MainForm.Entry_3Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.MainForm.Entry_3Info, "Text", varTitle);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
