@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.2">
 	<testsuiteentryhierarchy>
@@ -160,7 +160,7 @@ delete it.]]>
 			<testcase
 			datasource="CsvConnector_Credentials"
 			id="5c7e2c5b-46df-4c65-b66b-b3f69b489a23"
-			name="AddEntriesByRecording">
+			name="AddNewEntryByRecording">
 				<description>
 					<![CDATA[... using the recording module "AddEntry"]]>
 				</description>
@@ -452,7 +452,7 @@ connector in three different ways:]]>
 						</testcase>
 						<testcase
 						id="5c7e2c5b-46df-4c65-b66b-b3f69b489a23"
-						name="AddEntriesByRecording">
+						name="AddNewEntryByRecording">
 							<testmodule
 							id="3885670f-b123-440f-9f44-16a0e48f48df"
 							name="AddEntry">
