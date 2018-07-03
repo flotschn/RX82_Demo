@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.2">
 	<testsuiteentryhierarchy>
@@ -57,7 +57,7 @@ rxversion="8.2">
 			<testcase
 			datasource="CsvConnector_Credentials"
 			id="32e63182-c4d3-4974-9bf8-d8b04f54c8d3"
-			name="AddEntryWithArguments">
+			name="01_AddEntryWithArguments">
 				<description>
 					<![CDATA[... using the&nbsp;recorder module 
 "AddEntryByUserCodeAction"]]>
@@ -160,7 +160,7 @@ delete it.]]>
 			<testcase
 			datasource="CsvConnector_Credentials"
 			id="5c7e2c5b-46df-4c65-b66b-b3f69b489a23"
-			name="AddNewEntryByRecording">
+			name="02_AddNewEntryByRecording">
 				<description>
 					<![CDATA[... using the recording module "AddEntry"]]>
 				</description>
@@ -327,7 +327,7 @@ connector in three different ways:]]>
 			<testcase
 			datasource="CsvConnector_Credentials"
 			id="bda41cf2-9036-45da-8f32-a82d2116f53a"
-			name="AddEntriesByCodeModule_03">
+			name="03_AddEntryByCodeModule">
 				<description>
 					<![CDATA[... using the&nbsp;code module "AddCredentialEntry"]]>
 				</description>
@@ -435,8 +435,24 @@ connector in three different ways:]]>
 							</modulegroup>
 						</setup>
 						<testcase
+						id="bda41cf2-9036-45da-8f32-a82d2116f53a"
+						name="03_AddEntryByCodeModule">
+							<testmodule
+							id="fd1de731-18ce-4ff4-a624-accd706fade6"
+							name="AddCredentialEntry">
+							</testmodule>
+							<testmodule
+							id="51b00065-850e-4bee-8240-614fb40334ee"
+							name="ValidateEntry">
+							</testmodule>
+							<testmodule
+							id="f917d91a-6739-47ba-9909-d50dc1fff178"
+							name="DeleteEntry">
+							</testmodule>
+						</testcase>
+						<testcase
 						id="32e63182-c4d3-4974-9bf8-d8b04f54c8d3"
-						name="AddEntryWithArguments">
+						name="01_AddEntryWithArguments">
 							<testmodule
 							id="6794cc06-3296-4e21-b11d-9ff2b1fd1245"
 							name="AddEntryByUserCodeAction">
@@ -452,7 +468,7 @@ connector in three different ways:]]>
 						</testcase>
 						<testcase
 						id="5c7e2c5b-46df-4c65-b66b-b3f69b489a23"
-						name="AddNewEntryByRecording">
+						name="02_AddNewEntryByRecording">
 							<testmodule
 							id="3885670f-b123-440f-9f44-16a0e48f48df"
 							name="AddEntry">
@@ -463,22 +479,6 @@ connector in three different ways:]]>
 							</testmodule>
 							<testmodule
 							id="13de641d-6f6e-4dff-ad15-d16a5611166e"
-							name="DeleteEntry">
-							</testmodule>
-						</testcase>
-						<testcase
-						id="bda41cf2-9036-45da-8f32-a82d2116f53a"
-						name="AddEntriesByCodeModule_03">
-							<testmodule
-							id="fd1de731-18ce-4ff4-a624-accd706fade6"
-							name="AddCredentialEntry">
-							</testmodule>
-							<testmodule
-							id="51b00065-850e-4bee-8240-614fb40334ee"
-							name="ValidateEntry">
-							</testmodule>
-							<testmodule
-							id="f917d91a-6739-47ba-9909-d50dc1fff178"
 							name="DeleteEntry">
 							</testmodule>
 						</testcase>
