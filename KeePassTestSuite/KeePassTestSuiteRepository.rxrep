@@ -1,4 +1,5 @@
-﻿<repository
+<?xml version="1.0" encoding="utf-8"?>
+<repository
 id="550de26a-9cec-4a8c-862c-5b3a773f0132"
 name="KeePassTestSuiteRepository"
 rxversion="8.2">
@@ -18,7 +19,7 @@ rxversion="8.2">
 		capname="form"
 		id="93269426-4e2d-4251-b500-04dc1535117a"
 		isrooted="True"
-		name="LogInDialog2001"
+		name="LogInDialog200"
 		refimgid="db113755-dd7f-4567-a1d0-b333d885aa24"
 		searchtimeout="30000ms"
 		usecache="False">
