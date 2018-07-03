@@ -27,7 +27,7 @@ namespace KeePassTestSuite
     public partial class KeePassTestSuiteRepository : RepoGenBaseFolder
     {
         static KeePassTestSuiteRepository instance = new KeePassTestSuiteRepository();
-        KeePassTestSuiteRepositoryFolders.LogInDialogAppFolder _logindialog;
+        KeePassTestSuiteRepositoryFolders.LogInDialog_NewAppFolder _logindialog_new;
         KeePassTestSuiteRepositoryFolders.MainFormAppFolder _mainform;
         KeePassTestSuiteRepositoryFolders.KeePassAppFolder _keepass;
         KeePassTestSuiteRepositoryFolders.AddEntryAppFolder _addentry;
@@ -49,7 +49,7 @@ namespace KeePassTestSuite
         public KeePassTestSuiteRepository() 
             : base("KeePassTestSuiteRepository", "/", null, 0, false, "0e2cdd23-dd72-4d10-b662-4933e627b6fb", ".\\RepositoryImages\\KeePassTestSuiteRepository0e2cdd23.rximgres")
         {
-            _logindialog = new KeePassTestSuiteRepositoryFolders.LogInDialogAppFolder(this);
+            _logindialog_new = new KeePassTestSuiteRepositoryFolders.LogInDialog_NewAppFolder(this);
             _mainform = new KeePassTestSuiteRepositoryFolders.MainFormAppFolder(this);
             _keepass = new KeePassTestSuiteRepositoryFolders.KeePassAppFolder(this);
             _addentry = new KeePassTestSuiteRepositoryFolders.AddEntryAppFolder(this);
@@ -122,12 +122,12 @@ namespace KeePassTestSuite
         }
 
         /// <summary>
-        /// The LogInDialog folder.
+        /// The LogInDialog_New folder.
         /// </summary>
         [RepositoryFolder("93269426-4e2d-4251-b500-04dc1535117a")]
-        public virtual KeePassTestSuiteRepositoryFolders.LogInDialogAppFolder LogInDialog
+        public virtual KeePassTestSuiteRepositoryFolders.LogInDialog_NewAppFolder LogInDialog_New
         {
-            get { return _logindialog; }
+            get { return _logindialog_new; }
         }
 
         /// <summary>
@@ -183,19 +183,19 @@ namespace KeePassTestSuite
     public partial class KeePassTestSuiteRepositoryFolders
     {
         /// <summary>
-        /// The LogInDialogAppFolder folder.
+        /// The LogInDialog_NewAppFolder folder.
         /// </summary>
         [RepositoryFolder("93269426-4e2d-4251-b500-04dc1535117a")]
-        public partial class LogInDialogAppFolder : RepoGenBaseFolder
+        public partial class LogInDialog_NewAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _masterpasswordInfo;
             RepoItemInfo _btokInfo;
 
             /// <summary>
-            /// Creates a new LogInDialog  folder.
+            /// Creates a new LogInDialog_New  folder.
             /// </summary>
-            public LogInDialogAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("LogInDialog", "/form[@controlname='KeyPromptForm']", parentFolder, 30000, null, false, "93269426-4e2d-4251-b500-04dc1535117a", "")
+            public LogInDialog_NewAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("LogInDialog_New", "/form[@controlname='KeyPromptForm']", parentFolder, 30000, null, false, "93269426-4e2d-4251-b500-04dc1535117a", "")
             {
                 _masterpasswordInfo = new RepoItemInfo(this, "MasterPassword", "text[@controlname='m_tbPassword']/text[@accessiblerole='Text']", 10000, null, "982d26ce-9282-492b-9795-a6ecf745d931");
                 _btokInfo = new RepoItemInfo(this, "BtOK", "button[@controlname='m_btnOK']", 10000, null, "1c9d14c1-7d13-4526-9e9b-f5627600e539");
