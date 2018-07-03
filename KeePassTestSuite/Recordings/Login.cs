@@ -79,16 +79,16 @@ namespace KeePassTestSuite.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LogIn.MasterPassword' at Center.", repo.LogIn.MasterPasswordInfo, new RecordItemIndex(0));
-            repo.LogIn.MasterPassword.Click(100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LogInDialog.MasterPassword' at Center.", repo.LogInDialog.MasterPasswordInfo, new RecordItemIndex(0));
+            repo.LogInDialog.MasterPassword.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '●●' with focus on 'LogIn.MasterPassword'.", repo.LogIn.MasterPasswordInfo, new RecordItemIndex(1));
-            repo.LogIn.MasterPassword.PressKeys("rx");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '●●' with focus on 'LogInDialog.MasterPassword'.", repo.LogInDialog.MasterPasswordInfo, new RecordItemIndex(1));
+            repo.LogInDialog.MasterPassword.PressKeys("rx");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LogIn.BtOK' at Center.", repo.LogIn.BtOKInfo, new RecordItemIndex(2));
-            repo.LogIn.BtOK.Click(100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LogInDialog.BtOK' at Center.", repo.LogInDialog.BtOKInfo, new RecordItemIndex(2));
+            repo.LogInDialog.BtOK.Click(100);
             Delay.Milliseconds(0);
             
         }
